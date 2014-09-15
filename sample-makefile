@@ -1,4 +1,4 @@
-'''make
+```make
 # Written by Jae Woo Lee
 # This Makefile should be used as a template for future Makefiles.
 # It’s heavily commented, so hopefully you can understand what each
@@ -79,4 +79,4 @@ clean:
 .PHONY: all
 all: clean main
 
-'''
+```
