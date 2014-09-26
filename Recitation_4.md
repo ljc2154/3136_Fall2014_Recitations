@@ -1,4 +1,4 @@
-## Lab 1 ##
+## Lab 2 ##
 
 (a) Writing selection sort code and create a Makefile for the relevant code.
 
