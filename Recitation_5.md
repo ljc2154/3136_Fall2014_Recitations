@@ -22,7 +22,7 @@ To access the address of a variable, we use an &.
 ```c
     int x = 5;
     int *y;
-    y = &5;
+    y = &x;
 ```    
 This tells y to point to the address of the int x.
 
