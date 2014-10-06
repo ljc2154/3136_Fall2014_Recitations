@@ -59,7 +59,7 @@ Walk through the following program, keeping track of what pointers point to what
 ```c
 #include <stdio.h>
 
-int main(int argc, char **argv)
+int main()
 {
     int i,j;
     int *x;
