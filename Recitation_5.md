@@ -7,12 +7,11 @@ A pointer is a data type whose value is an address in memory.  The value "points
 Here is an example of a declaration of a pointer c which points to a char.
 ```c
     char *c;
-    *c = 'f';
 ```
 The * in the declaration lets us know that we are working with a pointer.
 The data type before the * indicates the data type or structure that the pointer points to.
 
-We also use a * when accessing the data that the pointer points to.
+We also use a * when accessing the data that the pointer points to.  If the contents of pointer c has been assigned, we can do something like this:
 ```c
     char b;
     b = *c;
@@ -72,7 +71,7 @@ int main()
     x = i;
     y = &j;
     a = 'a';
-    *k = a;
+    *k = a; // hint: may lead to seg fault
     b = *k;
     a = 'c';
     a = (char)j;
