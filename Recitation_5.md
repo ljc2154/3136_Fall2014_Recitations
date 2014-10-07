@@ -54,7 +54,7 @@ And that's pointers in a nutshell.
 
 ### Pointer Example ###
 
-Walk through the following program, keeping track of what pointers point to what, and what's happening at each step.  Although this will compile, we will have warnings and some possible run-time errors.
+Walk through the following program, keeping track of what the variables represent, what pointers point to what, and what's happening at each step.  Although this will compile, we will have warnings and some possible run-time errors.
 ```c
 #include <stdio.h>
 
