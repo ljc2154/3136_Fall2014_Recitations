@@ -5,8 +5,8 @@
  * HW 2.5
  *
  * echo3.c
- * Modify the echo program to print the arguments
- * in dictionary order.
+ * Further modify the echo2 to print out each arg in
+ * reverse as well.
  */
 
 #include <stdio.h>
