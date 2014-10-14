@@ -4,7 +4,7 @@
  * 3136
  * HW 2.5
  *
- * echo2.c
+ * echo.c
  * Type out the "echo" program in the lecture note and run it.
  */
 
