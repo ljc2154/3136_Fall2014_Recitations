@@ -20,7 +20,7 @@ int main(int argc, char **argv)
   	// j will be index of char array argv[i]
   	int j;
   	// print chars of argv[i] in reverse order
-  	for (j = strlen(argv[i]); j >= 0; j--) {
+  	for (j = strlen(argv[i]) - 1; j >= 0; j--) {
   		printf("%c", argv[i][j]);
   	}
     // print new line after each argument
