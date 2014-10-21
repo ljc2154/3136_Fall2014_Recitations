@@ -13,23 +13,24 @@ struct Node {
 
 /*
  * Create a node that holds the given data x,
- * add the node to the front of the given list,
- * and returns the resulting list.
+ * add the node to the front of the given list (oldHead),
+ * and returns the resulting list (newHead).
  *
  * Returns NULL if malloc for the node fails.
  */
 struct Node *prepend(struct Node *oldHead, double x)
 {
-	// allocate memory on heap for a new Node
+    // allocate memory on heap for a new Node
     struct Node *newHead = (struct Node *)malloc(sizeof(struct Node));
-	// check if malloc returned NULL (not enough available memory on heap)
+    // check if malloc returned NULL (not enough available memory on heap)
     if (newHead == NULL)
 		return NULL;
 
-	// set variables for the new node struct
-	// same as (*newHead).data =x;
+    // set variables for the new node struct
+    // same as (*newHead).data =x;
     newHead->data = x;
     newHead->next = oldHead;
+    // newHead now points to the first Node in the list
     return newHead;
 }
 
@@ -54,9 +55,11 @@ void print(struct Node *head)
 void apply(struct Node *current, double (*f)(double))
 {
     struct Node *current = head;
+    // step 1 for "traversing" a linked list": check if current is a NULL pointer
     while (current != NULL) {
         current->data = f(current->data);
-		current = current->next;
+        // step 2, set current to point to the next node
+	current = current->next;
     }
 }
 */
@@ -66,8 +69,10 @@ void apply(struct Node *current, double (*f)(double))
  */
 void apply(struct Node *list, double (*f)(double))
 {
+    // same as "if (list != NULL) {"
     if (list) {
         list->data = f(list->data);
+        // using recursion as if it were a while loop to "traverse" the list (replaces step 2 above)
         apply(list->next, f);
     }
 }
@@ -83,7 +88,7 @@ struct Node *remove_front(struct Node *oldHead)
     struct Node *newHead = NULL;
     if (oldHead) {
         // second node in the list will be the new head (new first node)
-		newHead = oldHead->next;
+	newHead = oldHead->next;
         free(oldHead);
     }
     return newHead;
