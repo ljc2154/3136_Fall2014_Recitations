@@ -52,7 +52,7 @@ void print(struct Node *head)
  * Alternative to Jae's function below
  */
 /*
-void apply(struct Node *current, double (*f)(double))
+void apply(struct Node *head, double (*f)(double))
 {
     struct Node *current = head;
     // step 1 for "traversing" a linked list": check if current is a NULL pointer
