@@ -1,4 +1,6 @@
 /*
+ * ncat.c
+ * Written by Jae Woo Lee, edited by Louis Croce in Recitation on 10/27/14
  * ncat <file_name>
  *
  * - reads a file line-by-line, 
