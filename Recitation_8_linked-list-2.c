@@ -1,4 +1,4 @@
-// A linked list example program written by Jae Woo Lee and edited by Louis Croce in Recitation 10/27.
+// A linked list example program written by Jae Woo Lee and edited by Louis Croce in Recitation 10/27/14.
 // To compile & link: gcc -g -Wall linked-list-2.c -lm
 
 #include <stdio.h>
