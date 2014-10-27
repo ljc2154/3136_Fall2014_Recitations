@@ -13,11 +13,16 @@ struct Node {
 
 void print(const char *msg, struct Node *list)
 {
-    struct Node *node = list;
+    // node points to same node as list
+    struct Node *current = list;
+
+    // prints each char msg points to until it reaches a '\0'
     printf("%s: ", msg);
-    while (node) {
-        printf("-> %g ", node->data);
-	node = node->next;
+    // traversing linked list
+    while (current) { // STEP A of List Traversal.  same as while (current != NULL) {
+    	// print data contents of node
+        printf("-> %g ", current->data);  // current -> data is same as (*current).data
+	current = current->next; // STEB B of List Traversal.  abstraction for current = (*current).next;
     }
     printf("\n");
 }
