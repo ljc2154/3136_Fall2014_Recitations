@@ -37,15 +37,20 @@ void print(const char *msg, struct Node *list)
  */
 struct Node *insert(struct Node *predecessor, double x)
 {
+    // create space on heap for new node
     struct Node *node = (struct Node *)malloc(sizeof(struct Node));
+    // check if malloc returned NULL (if malloc failed)
     if (node == NULL)
+    	// not enough memory on the heap for the new node
 	return NULL;
 
-    node->data = x;
+    // set node's data to x
+    node->data = x;	// same as (*node).data = x;
 
     if (predecessor == NULL) {
         // no predecessor passed in; return a new list.
         node->next = NULL;
+        return node;	// optional because we return node at the end
     } else {
         // insert the new node between predecessor and predecessor->next.
         node->next = predecessor->next;
@@ -61,11 +66,11 @@ struct Node *insert(struct Node *predecessor, double x)
  */
 struct Node *find(struct Node *list, double x)
 {
-    while (list) {
-        if (list->data == x) {
+    while (list) { // STEP A of List Traversal
+        if (list->data == x) { // same as (*list).data == x
             return list;
         }
-	list = list->next;
+	list = list->next;  // STEP B of List Traversal
     }
     return NULL;
 }
@@ -83,7 +88,6 @@ int remove_node(struct Node **listPtr, double x)
     // check for NULL pointer or empty list, 
     // in which cases we simply return 0;
     if (listPtr && *listPtr) {
-
         // currentNode is the node we are looking at.
         struct Node *currentNode = *listPtr;
 
