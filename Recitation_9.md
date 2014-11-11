@@ -155,7 +155,7 @@ Should be a mirror image of sorts of the constructor. Note that the destructor g
 // In mystring.cpp:
   MyString::~MyString()
   {
-    delete[] data; deallocate memory allocated in the constructor.
+    delete[] data; //deallocate memory allocated in the constructor.
   }
 ```
 #### Copy Constructor ####
