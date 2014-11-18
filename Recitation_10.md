@@ -68,7 +68,6 @@ search(Node n): O(n)
 delete(Node n): O(n)
 insert(Node n): O(n)
 print_tree: O(n)
-delete_Root: O(1)
 ```
 However, if our tree is rougly balanced (and not just a linked list) then we get very good runtimes O(logn). This is what happens on average.
 ```
@@ -77,7 +76,6 @@ search(Node n): O(logn)
 delete(Node n): O(logn)
 insert(Node n): O(logn)
 print_tree: O(n)
-delete_Root: O(1)
 ```
 
 ## Traversals ##
