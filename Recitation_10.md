@@ -52,7 +52,6 @@ search(Node n): O(n)
 delete(Node n): O(n)
 insert(Node n): O(n)
 print_tree: O(n)
-delete_Root: O(1)
 ```
 
 ## Binary Search Trees ##
