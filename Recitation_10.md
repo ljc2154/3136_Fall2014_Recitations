@@ -39,7 +39,7 @@ Let's see what different types of binary trees look like in the wild.
 ```
 Full Binary Tree: Every node other than the leaves has 2 children.
 Complete Binary Tree: Every level is completely filled except for possibly the last.
-Perfect Binary Tree: Complete and Full.  (All leaves are at the same level).
+Perfect Binary Tree: Full and all leaves are at the same level.
 Balanced Binary Tree: The depth of the left and right subtrees of every node differ by one or less.
 Degenerate Tree: Is a tree where for each parent node, there is only one associated child node. (Performs like a linked list).
 ```
